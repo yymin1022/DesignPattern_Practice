@@ -3,7 +3,6 @@ package headfirst.strategy;
 public class MiniDuckSimulator {
  
 	public static void main(String[] args) {
- 
 		MallardDuck	mallard = new MallardDuck();
 		RubberDuck	rubberDuckie = new RubberDuck();
 		DecoyDuck	decoy = new DecoyDuck();
@@ -17,5 +16,12 @@ public class MiniDuckSimulator {
 		model.performFly();	
 		model.setFlyBehavior(new FlyRocketPowered());
 		model.performFly();
+
+		model.quackBehavior.quack();
+
+		BadDuck		bad = new BadDuck();
+		for(int i = 0; i < 10; i++){
+			bad.performQuack();
+		}
 	}
 }

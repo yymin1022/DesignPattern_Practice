@@ -43,5 +43,19 @@ public class MiniDuckSimulator {
 			ducks[i].display();
 			ducks[i].performEggBehavior();
 		}
+
+		/*
+		 * Practice #4
+		 */
+		mallard.display();
+		mallard.performEggBehavior();
+
+		model.display();
+		model.performEggBehavior();
+
+		model.CopyBehavior(mallard);
+
+		model.display();
+		model.performEggBehavior();
 	}
 }

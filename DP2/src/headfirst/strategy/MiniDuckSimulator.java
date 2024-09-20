@@ -1,7 +1,6 @@
 package headfirst.strategy;
 
 import headfirst.strategy.extend.SpawnEgg;
-import headfirst.strategy.extend.SpawnNothing;
 
 public class MiniDuckSimulator {
  
